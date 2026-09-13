@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmacie Mohamed Bouziane</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #1F5C57;
+    --teal-dark: #143E3A;
+    --mint: #E7F1EE;
+    --paper: #FBFAF7;
+    --ink: #22302E;
+    --line: #D8E4E1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Work Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    border-bottom: 1px solid var(--line);
+  }
+  .logo { font-size: 1.1rem; font-weight: 600; color: var(--teal-dark); }
+  .status {
+    font-size: 0.9rem;
+    background: var(--mint);
+    color: var(--teal-dark);
+    padding: 6px 14px;
+    border-radius: 20px;
+  }
+
+  .hero {
+    padding: 60px 6% 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    color: var(--teal-dark);
+  }
+  .rating {
+    margin-top: 16px;
+    font-size: 1rem;
+    color: var(--teal);
+  }
+  .rating .stars { color: #C7962C; letter-spacing: 2px; }
+  .hero p.tag {
+    margin-top: 18px;
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4B5C58;
+  }
+
+  .info-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    max-width: 1000px;
+    margin: 40px auto 0;
+    border: 1px solid var(--line);
+  }
+  .info-card {
+    background: var(--paper);
+    padding: 26px 24px;
+  }
+  .info-card h3 {
+    font-size: 0.85rem;
+    text-transform: none;
+    color: var(--teal);
+    margin-bottom: 8px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+  }
+  .info-card p { font-size: 0.98rem; }
+  .info-card a { color: var(--teal-dark); text-decoration: none; font-weight: 500; }
+
+  section.services {
+    padding: 60px 6%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  section.services h2 {
+    color: var(--teal-dark);
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  .service {
+    background: var(--mint);
+    padding: 24px;
+    border-radius: 6px;
+  }
+  .service h3 { font-size: 1.05rem; color: var(--teal-dark); margin-bottom: 6px; }
+  .service p { font-size: 0.92rem; color: #4B5C58; }
+
+  section.reviews {
+    background: var(--mint);
+    padding: 60px 6%;
+  }
+  .reviews-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .reviews-inner h2 { color: var(--teal-dark); font-size: 1.6rem; margin-bottom: 30px; }
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .review {
+    background: var(--paper);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+  }
+  .review .name { font-weight: 600; font-size: 0.95rem; }
+  .review .stars { color: #C7962C; font-size: 0.85rem; margin: 4px 0 8px; }
+  .review p.text { font-size: 0.92rem; color: #4B5C58; }
+
+  footer {
+    padding: 40px 6%;
+    text-align: center;
+    color: #6B7A77;
+    font-size: 0.88rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Pharmacie Mohamed Bouziane</div>
+  <div class="status">Ouvert · Ferme à 20h00</div>
+</header>
+
+<section class="hero">
+  <h1>Votre pharmacie de quartier à Sidi El Akhdar</h1>
+  <p class="rating"><span class="stars">★★★★★</span> 5.0 sur Google — 13 avis</p>
+  <p class="tag">Conseils, médicaments et produits de santé du quotidien, avec un accueil que les habitants du quartier connaissent bien.</p>
+</section>
+
+<div class="info-bar">
+  <div class="info-card">
+    <h3>Adresse</h3>
+    <p>7584+CPC<br>Sidi El Akhdar</p>
+  </div>
+  <div class="info-card">
+    <h3>Téléphone</h3>
+    <p><a href="tel:0778875158">0778 87 51 58</a></p>
+  </div>
+  <div class="info-card">
+    <h3>Horaires</h3>
+    <p>Tous les jours<br>Ferme à 20h00</p>
+  </div>
+  <div class="info-card">
+    <h3>Itinéraire</h3>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=Pharmacie+Mohamed+Bouziane+Sidi+El+Akhdar" target="_blank">Ouvrir dans Google Maps</a></p>
+  </div>
+</div>
+
+<section class="services">
+  <h2>Ce que nous proposons</h2>
+  <div class="services-grid">
+    <div class="service">
+      <h3>Médicaments sur ordonnance</h3>
+      <p>Texte à remplacer — détaillez ici les services réels de la pharmacie.</p>
+    </div>
+    <div class="service">
+      <h3>Conseil et orientation</h3>
+      <p>Texte à remplacer — par exemple conseils sur les traitements courants.</p>
+    </div>
+    <div class="service">
+      <h3>Produits de parapharmacie</h3>
+      <p>Texte à remplacer — cosmétique, hygiène, soins pour bébé, etc.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="reviews-inner">
+    <h2>Avis de nos clients</h2>
+    <div class="review-grid">
+      <div class="review">
+        <div class="name">Salah Ouail</div>
+        <div class="stars">★★★★★</div>
+        <p class="text">Une expérience très appréciée par ce client fidèle.</p>
+      </div>
+      <div class="review">
+        <div class="name">Sidahmed Sidahmed</div>
+        <div class="stars">★★★★★</div>
+        <p class="text">Personnel décrit comme agréable et accueillant.</p>
+      </div>
+      <div class="review">
+        <div class="name">Ridha Laklas</div>
+        <div class="stars">★★★☆☆</div>
+        <p class="text">A noté qu'il manquait certains médicaments en stock.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Pharmacie Mohamed Bouziane — Sidi El Akhdar · Site vitrine réalisé pour la pharmacie
+</footer>
+
+</body>
+</html>
